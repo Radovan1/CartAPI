@@ -14,12 +14,14 @@ final class CartItem: Codable {
     var description: String
     var price: Double
     var quantity: Int
+    var imageUrl: String
     
-    init(id: Int? = nil, name: String, description: String, price: Double, quantity: Int) {
+    init(id: Int? = nil, name: String, description: String, price: Double, quantity: Int, imageUrl: String) {
         self.name = name
         self.description = description
         self.price = price
         self.quantity = quantity
+        self.imageUrl = imageUrl
     }
 }
 
